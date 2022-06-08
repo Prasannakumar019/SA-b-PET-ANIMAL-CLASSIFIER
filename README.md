@@ -18,20 +18,47 @@
 Program to implement 
 Developed by   :Prasannakumar M
 RegisterNumber :212220230035  
-![image](https://user-images.githubusercontent.com/75235090/172538519-210d596f-1f82-46f5-8fdb-cd403ed4357c.png)
+```
+```python
+class Pet(object):
 
-*/
+    def __init__(self, animal='', color='', food='', noise='', name=''):
+
+        self.Animal = animal
+        self.Color = color
+        self.Food = food
+        self.Noise = noise
+        self.Name = name
+
+
+Pet1 = Pet('Cat', 'Orange', 'Kibble Bits', 'Purr', 'Toby')
+Pet2 = Pet('Dog', 'black', 'Steak', 'Bark', 'Elvis')
+Pet3 = Pet('Cat', 'Black', 'Kibble Bits', 'Hiss', 'Salem')
+Pet4 = Pet ('Salammander', 'White', 'Insects', 'Hiss', 'Gertrude')
+Pet5 = Pet('Pig', 'Pink', 'Feed', 'Oink', 'WiLbur')
+
+petList = [Pet1, Pet2, Pet3, Pet4, Pet5]
+
+def print_attributes(objList):
+
+    for obj in objList:
+
+        for attr in obj.__dict__:
+
+            print(attr, getattr(obj, attr))
+
+print_attributes(petList)
 ```
 
 ## OUTPUT:
 
-```
+
 1. CODE :
-![Capture](https://user-images.githubusercontent.com/75235090/172538247-b0f4ba4c-b9fa-4f0c-a8e0-b20f7f4985c2.PNG)
+![image](https://user-images.githubusercontent.com/75235090/172654411-d02d066d-ddc7-4e9e-9d52-cb53549572e1.png)
+
 
 
 
 2. DEMO VIDEO YOUTUBE LINK:
 https://www.youtube.com/watch?v=RQqlgkkX8ho
-```
 
